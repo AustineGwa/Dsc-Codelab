@@ -86,29 +86,11 @@ public class HomeFragmentHolder extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-//        if (id == R.id.nav_fasion) {
-//
-//          openFragment(new FasionFrag());
-//
-//        } else if (id == R.id.nav_quotes) {
-//            openFragment(new Quotes());
-//
-//        } else if (id == R.id.nav_comedy) {
-//            openFragment(new Commedy());
-//
-//        } else if (id == R.id.nav_education) {
-//
-//            openFragment(new Education());
-//
-//        } else if (id == R.id.nav_lifestyle) {
-//
-//            openFragment(new Lifestyle());
-//
-//        } else if (id == R.id.nav_music) {
-//
-//            openFragment(new Music());
-//
-//        }
+        if (id == R.id.nav_home) {
+
+          openFragment(new HomePage());
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

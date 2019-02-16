@@ -2,6 +2,7 @@ package com.gwazasoftwares.DscDemo;
 
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -67,7 +68,7 @@ public class Login extends Fragment {
                 progressDialog.setMessage("Verifying  user  credentials...");
                 progressDialog.setCanceledOnTouchOutside(false);
                 progressDialog.show();
-               // verifyUser(incomingEmail, incomingPassword);
+               login(incomingEmail, incomingPassword);
 
             }
         });
@@ -78,6 +79,13 @@ public class Login extends Fragment {
                 startReset();
             }
         });
+    }
+
+    private void login(String incomingEmail, String incomingPassword) {
+        Intent i = new Intent(getActivity(), HomeFragmentHolder.class);
+        startActivity(i);
+        getActivity().finish();
+
     }
 
     private void openSignup() {

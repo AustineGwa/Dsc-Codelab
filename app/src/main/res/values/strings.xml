@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kampo</string>
+    <string name="app_name">DscMmust</string>
     <string name="title_activity_home_fragment_holder">HomeFragmentHolder</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
